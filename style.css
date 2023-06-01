@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+   
+        height: 400px; /* define a altura máxima do elemento para exibir a barra de rolagem vertical */
+        overflow-y: scroll; /* adiciona a rolagem vertical */
+      }
+      
+  
+
+.about-header{
+    width: 1000%;
+    height: 1000%;
+    background-color: #006400;
+   
+    
+}
+
+.about-header p{
+    color: white;
+    padding: 2px;
+}
+
+header h2 span{
+    background-color: #006400;
+    
+}
+
+header h2{
+    color: black;
+    font-size: 35px;
+}
+
+.logo{
+    margin-top: 10px;
+    font-family: 'Monomaniac One', sans-serif;
+}
+.center{
+  font-family: 'Oswald', sans-serif;
+}
+.wraper-header{
+    padding: 40px 0;
+    width: 1000%;
+    
+
+}
+
+.banner-ads{
+    width: 80%;
+    height: 100px;
+    background-color: #222;
+   
+}
+
+.banner-ads h2{
+   
+    left: 10px;
+    top: 10px;
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+}
+
+nav {
+    background-color: #008000;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+  }
+  
+  nav ul li:hover > a {
+    background-color: #006400;
+  }
+  
+  nav ul li ul {
+    background-color: #008000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    display: none;
+  }
+  
+  nav ul li:hover > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  nav ul li ul li {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #fff;
+    width: 100%;
+  }
+  
+  nav ul li ul li:first-child {
+    border-top: none;
+  }
+  
+  nav ul li ul li a {
+    font-size: 14px;
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li.search {
+    margin-left: auto;
+  }
+  
+  nav ul li.search form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul li.search input[type="text"] {
+    background-color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+    width: 200px;
+  }
+  
+  nav ul li.search button[type="submit"] {
+    background-color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #008000;
+    cursor: pointer;
+    
+  }
+  
+
+  /* Estilos para a seção de destaques */
+.destaques {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* Estilos para o destaque principal */
+  .destaque-principal {
+    width: 60%;
+    max-width: 800px;
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .destaque-principal img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .destaque-principal h2 {
+    font-size: 32px;
+    margin: 10px 0;
+  }
+  
+  /* Estilos para os destaques laterais */
+  .destaque-lateral {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .destaque-lateral img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .destaque-lateral h3 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  /* Estilos para os links */
+  .destaques a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .destaques {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #F0F0F0;
+    padding: 20px;
+  }
+  
+  .destaque-principal {
+    flex-basis: 30%;
+    margin-right: 20px;
+  }
+  
+  .destaque-lateral {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+  }
+  
+  .destaque-lateral article {
+    margin-bottom: 20px;
+  }
+  
+  .destaque-principal a:hover {
+    transform: scale(1.05);
+  }
+  
+  .destaque-lateral a:hover {
+    transform: scale(1.05);
+  }
+  
+  .destaque-principal img,
+  .destaque-lateral img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .destaque-principal h2 {
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    color:#006400;
+  }
+  
+  .destaque-lateral h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #006400;
+  }
+  
+  .destaque-principal a,
+  .destaque-lateral a {
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    background-color: #FFFFFF;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 5px;
+  }
+  
+
+  /* Define as propriedades de estilo para a seção de notícias */
+.noticias {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    
+    
+  }
+  
+  
+  /* Define as propriedades de estilo para cada artigo de notícia */
+  .noticias article {
+    margin: 10px;
+    width: calc(20% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+   
+  }
+  
+  /* Define as propriedades de estilo para as imagens das notícias */
+  .noticias img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Define as propriedades de estilo para o título das notícias */
+  .noticias h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Define as propriedades de estilo para o texto das notícias */
+  .noticias p {
+    font-size: 1em;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Define as propriedades de estilo para as notícias quando o mouse passa por cima */
+  .noticias article:hover img {
+    transform: scale(1.1);
+    background-color: #f2f2f2;
+  }
+  
+  .noticias article:hover h3,
+  .noticias article:hover p {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  article a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  article a:hover {
+    text-decoration: none;
+  }
+  
+  article img {
+    width: 100%;
+  }
+  
+  article h3 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  article p {
+    color: green;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+
+ /* Estilização da coluna lateral */
+.coluna {
+    width: 60%;
+    float: left;
+    left: auto;
+   
+  }
+  
+  /* Estilização das notícias da coluna lateral */
+  .coluna h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .coluna p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .coluna a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .coluna a:hover {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+
+
+ 
+ 
